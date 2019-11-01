@@ -1,0 +1,24 @@
+#include <vector>
+using namespace std;
+int main(){
+    vector <string> Questions;
+    vector <string> Answers;
+    string answerToQ;
+    int randNum, numOfQandA, Count;
+    Count = 0;
+    randNum = rand() % numOfQandA;
+    while(Count > Questions.size()){
+        randNum = rand() % numOfQandA;
+        cout << "Question " << randNum;
+        cout << Questions.at(randNum) << endl;
+        getline(cin, answerToQ);
+        cout << "Answer to Question " << randNum << " is " << Answers.at(randNum) << endl;
+        Count++;
+    }
+    while(Count > Questions.size()){
+        Questions.pop_back();
+        Answers.pop_back();
+        Count++;
+    }
+return 0;
+}
