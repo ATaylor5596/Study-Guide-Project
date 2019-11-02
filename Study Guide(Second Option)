@@ -1,5 +1,7 @@
 #include <vector>
+#include <iostream>
 using namespace std;
+
 int main(){
     vector <string> Questions;
     vector <string> Answers;
