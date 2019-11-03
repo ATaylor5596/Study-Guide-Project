@@ -13,6 +13,7 @@ int main(){
         randNum = rand() % numOfQandA;
         cout << "Question " << randNum;
         cout << Questions.at(randNum) << endl;
+        cout << "What is the answer to this question: " << endl;
         getline(cin, answerToQ);
         cout << "Answer to Question " << randNum << " is " << Answers.at(randNum) << endl;
         Count++;
