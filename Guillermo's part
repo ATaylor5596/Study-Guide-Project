@@ -1,0 +1,32 @@
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    // Variable to store the number of flash cards
+    int numCards;
+    
+    // variable that stores answers
+    int questionAnswer;
+   
+    // Ask the user how many questions so that it can create a set of flash cards
+    cout << " What is the number of flash cards you will use? " << endl;
+    
+    // get the number of flash cards the user wants
+    cin >> numCards;
+    
+    // Remind the user of the number of flash cards
+    cout << "The number of flash cards you can make is " << numCards << endl;
+    
+    // output number of flash cards user wants and allow user to write questions and answer
+    
+    // Store question/answer in a loop or vector
+
+    // get the answers
+    cin >> questionAnswer;
+
+
+    return 0;
+}
