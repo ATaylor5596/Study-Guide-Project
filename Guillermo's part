@@ -24,13 +24,14 @@ int main()
     
     // Store question/answer in a loop or vector
     
-    
-    //As they are writing their flashcards, display flashcards and ask them if they would like to delete a flashcard.
-    //Ask them which card. 
-    //Have them type a number that corresponds with the flashcard number.
-    //Delete that flashcard. 
-    //Add another "flashcard."
-    //Keep on asking until they type "no" or "No" or "NO." 
+    //while loop
+        //As they are writing their flashcards, display flashcards and ask them if they would like to delete a flashcard.
+        //Ask them which card. 
+        //Have them type a number that corresponds with the flashcard number.
+        //Delete that flashcard. 
+        //Add another "flashcard."
+        //Keep on asking until they type "no" or "No" or "NO." 
+    //end of while loop
     
     // get the answers
     cin >> questionAnswer;
