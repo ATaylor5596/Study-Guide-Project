@@ -23,7 +23,15 @@ int main()
     // output number of flash cards user wants and allow user to write questions and answer
     
     // Store question/answer in a loop or vector
-
+    
+    
+    //As they are writing their flashcards, display flashcards and ask them if they would like to delete a flashcard.
+    //Ask them which card. 
+    //Have them type a number that corresponds with the flashcard number.
+    //Delete that flashcard. 
+    //Add another "flashcard."
+    //Keep on asking until they type "no" or "No" or "NO." 
+    
     // get the answers
     cin >> questionAnswer;
 
