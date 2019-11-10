@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
 
 int main()
@@ -10,6 +11,8 @@ int main()
     
     // variable that stores answers
     int questionAnswer;
+    
+    string choice
    
     // Ask the user how many questions so that it can create a set of flash cards
     cout << " What is the number of flash cards you will use? " << endl;
@@ -24,14 +27,19 @@ int main()
     
     // Store question/answer in a loop or vector
     
-    //while loop
-        //As they are writing their flashcards, display flashcards and ask them if they would like to delete a flashcard.
-        //Ask them which card. 
-        //Have them type a number that corresponds with the flashcard number.
-        //Delete that flashcard. 
-        //Add another "flashcard."
-        //Keep on asking until they type "no" or "No" or "NO." 
-    //end of while loop
+    while(answer != 'no'){
+        
+        cout << "Would you like to delete a flashcard in case you made a mistake on one? ";
+        cout << "Type 'no' if you do not want to or type 'yes' if you do.";
+        cin >> choice;
+        if(choice =='yes'){
+           cout << "Type the number that corresponds with the flashcard number.";
+           cin >> num;
+           
+       }
+         cout << "Would you like to delete another flashcard?";
+         cin >> choice;
+    }end of while loop
     
     // get the answers
     cin >> questionAnswer;
