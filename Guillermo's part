@@ -36,7 +36,7 @@ int main()
            cout << "Type the number that corresponds with the flashcard number.";
            cin >> num;
            
-       }
+       }//end of if statement
          cout << "Would you like to delete another flashcard?";
          cin >> choice;
     }end of while loop
