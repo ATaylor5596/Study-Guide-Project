@@ -1,9 +1,12 @@
 #include <vector>
 #include <iostream>
+#include <cstdlib>
+include <ctime>
 using namespace std;
 
 int main(){
-    vector<vector<string> > QandA;
+    vector<string> Questions;
+    vector<string> Answers;
     
     int randNum, numOfQandA, Count;
     Count = 0;
