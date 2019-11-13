@@ -3,9 +3,8 @@
 using namespace std;
 
 int main(){
-    vector <string> Questions;
-    vector <string> Answers;
-    string answerToQ;
+    vector<vector<string> > QandA;
+    
     int randNum, numOfQandA, Count;
     Count = 0;
     randNum = rand() % numOfQandA;
