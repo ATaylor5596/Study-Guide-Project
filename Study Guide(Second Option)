@@ -17,12 +17,12 @@ int main(){
         cout << "Answer to Question " << Count + 1 << " is " << Answers.at(Count) << endl;
         cout << "_________________________________________________" << endl;
         Count++;
-    }
+    }//end of display loop.
     while(Counta > Questions.size()){
         Questions.pop_back();
         Answers.pop_back();
         Counta++;
-    }
-    }
+    }//end of while delete loop.
+    
 return 0;
 }
