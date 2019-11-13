@@ -5,24 +5,24 @@ include <ctime>
 using namespace std;
 
 int main(){
-    vector<string> Questions;
-    vector<string> Answers;
     
-    int randNum, numOfQandA, Count;
+    int numOfQandA, Count, Counta;
     Count = 0;
-    randNum = rand() % numOfQandA;
+    Counta = 0;
+
     while(Count > Questions.size()){
-        randNum = rand() % numOfQandA;
-        cout << "Question " << randNum;
-        cout << Questions.at(randNum) << endl;
-        cout << "What is the answer to this question: " << endl;
+        cout << "_________________________________________________" << endl;
+        cout << "Question " << Count + 1 << ":"<< Questions.at(Count);
         getline(cin, answerToQ);
-        cout << "Answer to Question " << randNum << " is " << Answers.at(randNum) << endl;
+        cout << "Answer to Question " << Count + 1 << " is " << Answers.at(Count) << endl;
+        cout << "_________________________________________________" << endl;
         Count++;
     }
-    for(int i = 0; i < Questions.size();i++){
-        Questions.pop_back(i);
-        Answers.pop_back(i);
+    while(Counta > Questions.size()){
+        Questions.pop_back();
+        Answers.pop_back();
+        Counta++;
+    }
     }
 return 0;
 }
