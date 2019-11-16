@@ -1,0 +1,72 @@
+//
+//  main.cpp
+//  project
+//
+//  Created by Guillermo Alcantara on 11/4/19.
+//  Copyright © 2019 Guillermo Alcantara. All rights reserved.
+//
+
+#include <iostream>
+
+// use a vector to store question and answers
+#include <vector>
+
+// use <string> to capture the whole sentence
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    // initialize i
+    int i;
+   
+    // variable set to the maximum number of flash cards
+    int numCards = 50 ;
+    
+    // variable that stores questions
+    string questionToanswer;
+   
+    //variable that stores answers
+    string answerQuestion;
+   
+    // Ask the user how many questions so that it can create a set of flash cards
+    cout << " What is the number of flash cards you will use? " << endl;
+    
+    // get the number of flash cards the user wants
+    cin >> numCards;
+    
+    // Remind the user of the number of flash cards
+    cout << "********* The number of flash cards you will make is " << numCards << " out of 50 *********" <<endl;
+    
+    // add a space
+    cout << endl;
+    
+    // add another space
+    cout << endl;
+    
+    // output number of flash cards user wants and allow user to write questions and answer
+    cout << " ******* You will make "<< numCards << " flash cards! *********" << endl;
+    
+    // For loop that counts up to 50 questions
+    for(i = 1; i <= numCards; ++i){
+        cout << "Please type the question: ";
+        cin >> questionToanswer;
+        }
+   
+    // add a space
+    cout << endl;
+    cout << endl;
+    
+    // For loop that counts up to 50 answers
+    for (i = 1; i<= numCards; ++i){
+        cout << "Please type the answer to the question: ";
+        cin >> answerQuestion;
+        }
+    
+    // Store question/answer in a loop or vector
+
+   
+
+    return 0;
+}
