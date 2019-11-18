@@ -10,15 +10,14 @@ int main(){
     Count = 0;
     Counta = 0;
 
-    while(Count > Questions.size()){
-        cout << "_________________________________________________" << endl;
-        cout << "Question " << Count + 1 << ":"<< Questions.at(Count);
-        getline(cin, answerToQ);
-        cout << "Answer to Question " << Count + 1 << " is " << Answers.at(Count) << endl;
-        cout << "_________________________________________________" << endl;
-        Count++;
-    }//end of display loop.
-    while(Counta > Questions.size()){
+   for(int i = 0; i < numOfQA; i++){
+        cout << "__________________________________" << endl;
+        cout << "Question " << i + 1 << ": "<< Questions << endl;
+        getline(cin, userAnswer);
+        cout << "Answer " << i + 1 << ": "<< Answer << endl;
+        cout << "__________________________________" << endl;
+    }
+    for(Counta > numOfQandA){
         Questions.pop_back();
         Answers.pop_back();
         Counta++;
