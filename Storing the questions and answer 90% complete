@@ -1,0 +1,59 @@
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <sstream>
+#include <iterator>
+#include <string>
+#include <vector>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+	ofstream outputfile;
+	outputfile.open("Study.txt");
+
+	int num;
+	string ques, answ;
+	vector<vector<string> >flshcds;
+
+	cout << "How many questions would you like to store? \nYou can only store a maximum of 10 questions at once. ";
+	cin >> num;
+	while (num > 10)
+	{
+		cout << "You cannot enter more than 10 questions at once. \nPlease enter a number lower than 10! ";
+		cin >> num;
+	}
+	
+	cin.ignore();
+
+	for (int i = 0; i < num; i++)
+	{
+		vector<string> question;
+		cout << "\nEnter the question: ";
+		getline(cin, ques);
+		for (int j = 0; j < 1; j++)
+		{
+			cout << "\nEnter the answer: ";
+			getline(cin, answ);
+			question.push_back(ques); 
+			question.push_back(answ);
+		}
+		flshcds.push_back(question);
+	}
+
+	//cout << "";
+	for (int i = 0; i < flshcds.size(); ++i)
+	{
+		for (int j = 0; j < flshcds[i].size(); ++j)
+		{
+				cout << "\n" << flshcds[i][j] << "\n";
+		}
+	}
+
+	//copy(flshcds.begin(), flshcds.end(), ostream_iterator<string>(outputfile, "\n\n"));
+	outputfile.close();
+
+	return 0;
+}
