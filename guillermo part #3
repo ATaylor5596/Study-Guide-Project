@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    //
+    vector<string> QuestionList;
+    vector<string> AnswerList;
+    //
+    string QuestionToanswer;
+    string AnswerToquestion;
+    //
+    cout << "*** THE LIMIT OF QUESTIONS IS 50 ***" << endl;
+    cout << "Enter a question to answer, and type ** done ** when finished." << endl;
+    getline(cin, QuestionToanswer);
+    
+    while (QuestionToanswer != "done"){
+        QuestionList.push_back(QuestionToanswer);
+        getline(cin, QuestionToanswer);
+    }
+    //
+    cout << "Enter the answers to the questions in order : " << endl;
+      getline(cin, AnswerToquestion);
+      
+      while(AnswerToquestion != "done"){
+          AnswerList.push_back(AnswerToquestion);
+          getline(cin, AnswerToquestion);
+      }
+    
+    
+}
